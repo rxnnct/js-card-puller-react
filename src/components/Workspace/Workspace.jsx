@@ -1,5 +1,5 @@
 import React from "react";
-import style from './Workspace.module.css';
+import style from './Workspace.module.scss';
 
 const Header = () => {
     return (
