@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <header className={style.header}>
             <img className={style.logo} src={logo} />
+            <span className={style.appName}>JSCardPuller v.2</span>
         </header>
     );
 }

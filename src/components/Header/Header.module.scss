@@ -1,9 +1,16 @@
 .header {
   grid-area: h;
-  background-color: midnightblue;
+  background-color: black;
 }
 
 .logo {
   height: 60px;
   width: 60px;
+}
+
+.appName {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  margin: 18px 0 0 15px;
 }
