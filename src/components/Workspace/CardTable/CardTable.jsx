@@ -5,7 +5,7 @@ import Card from "./Card";
 const CardTable = () => {
     return (
         <div className={style.cardTable}>
-            <Card/>
+            <Card isPulled={true}/>
             <Card/>
             <Card/>
             <Card/>
