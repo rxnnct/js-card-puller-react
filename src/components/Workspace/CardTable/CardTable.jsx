@@ -12,6 +12,27 @@ const CardTable = () => {
             <Card/>
             <Card/>
             <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
     );
 }

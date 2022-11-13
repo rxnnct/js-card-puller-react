@@ -1,10 +1,11 @@
 .controlPanel {
+  width: 240px;
   display: grid;
   margin: 0 auto;
   grid-template-areas:
         "i g"
         "p p";
-  grid-template-columns: 160px;
+  grid-template-columns: 150px;
 }
 
 .cardsNumberInput {
@@ -25,7 +26,6 @@
   grid-area: g;
   margin: 10px;
   height: 60px;
-  width: 60px;
   border-radius: 5px;
   border: 2px solid #eee;
   background-color: green;
