@@ -2,10 +2,7 @@ import React from "react";
 import style from './ControlPanel.module.scss';
 
 const ControlPanel = (props) => {
-
-    let state = props.cards
-
-    let newDeckCardNumber = state.newDeckCardNumber;
+    let newDeckCardNumber = props.newDeckCardNumber;
 
     let onNewDeckCardNumber = (e) => {
         let text = e.target.value;

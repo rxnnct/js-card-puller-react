@@ -4,11 +4,11 @@ import Card from "./Card";
 
 const CardTable = (props) => {
 
-    let cardElements = props.cards.deck.map(c => <Card key={c} isPulled={false} text={c}/>);
+    let cardElements = props.deck.map(c => <Card key={c} isPulled={false} text={c}/>);
 
     return (
         <div className={style.cardTable}>
-            <Card isPulled={true} text={props.cards.pulledCard === undefined ? "" : props.cards.pulledCard}/>
+            <Card isPulled={true} text={props.pulledCard === undefined ? "" : props.pulledCard}/>
             {cardElements}
         </div>
     );
