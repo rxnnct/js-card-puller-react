@@ -3,13 +3,13 @@ const PULL_CARD = 'PULL_CARD';
 const UPDATE_NEW_DECK_CARD_NUMBER = 'UPDATE_NEW_DECK_CARD_NUMBER';
 
 const initialState = {
-    cards: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    deck: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     pulledCard: undefined,
     newDeckCardNumber: ''
 }
 
 //todo: remake this
-const cardsReducer = (state = initialState, action) => {
+const deckReducer = (state = initialState, action) => {
     switch (action.type) {
         case GENERATE_DECK: {
             return {
@@ -41,4 +41,4 @@ export const updateNewDeckCardNumberActionCreator = (num) => ({
     cardsNumber: num
 })
 
-export default cardsReducer;
+export default deckReducer;

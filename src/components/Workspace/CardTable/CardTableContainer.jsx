@@ -1,6 +1,6 @@
-import ControlPanel from "./ControlPanel";
 import {connect} from "react-redux";
 import {updateNewDeckCardNumberActionCreator} from "../../../state/reducers/deckReducer";
+import CardTable from "./CardTable";
 
 const mapStateToProps = (state) => {
     return {
@@ -16,6 +16,6 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-const ControlPanelContainer = connect(mapStateToProps, mapDispatchToProps)(ControlPanel);
+const CardTableContainer = connect(mapStateToProps, mapDispatchToProps)(CardTable);
 
-export default ControlPanelContainer;
+export default CardTableContainer;
