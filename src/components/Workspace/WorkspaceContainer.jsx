@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import {updateNewDeckCardNumberActionCreator} from "../../state/reducers/deckReducer";
+import {pullCardActionCreator, updateNewDeckCardNumberActionCreator} from "../../state/reducers/cardReducer";
 import Workspace from "./Workspace";
 
 const mapStateToProps = (state) => {
@@ -15,6 +15,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         updateNewDeckCardNumber: (num) => {
             dispatch(updateNewDeckCardNumberActionCreator(num))
+        },
+        pullCard: () => {
+            dispatch(pullCardActionCreator())
         }
     }
 }

@@ -7,7 +7,8 @@ const Workspace = (props) => {
     return (
         <div className={style.workspace}>
             <ControlPanel newDeckCardNumber={props.newDeckCardNumber}
-                          updateNewDeckCardNumber={props.updateNewDeckCardNumber}/>
+                          updateNewDeckCardNumber={props.updateNewDeckCardNumber}
+                          pullCard={props.pullCard}/>
             <CardTable deck={props.deck} pulledCard={props.pulledCard}/>
         </div>
     );
