@@ -8,7 +8,7 @@ const CardTable = (props) => {
 
     return (
         <div className={style.cardTable}>
-            <Card isPulled={true} text={props.pulledCard === undefined ? "" : props.pulledCard}/>
+            <Card isPulled={true} text={props.pulledCard === null ? "" : props.pulledCard}/>
             {cardElements}
         </div>
     );

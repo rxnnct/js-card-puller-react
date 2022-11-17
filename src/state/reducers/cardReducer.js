@@ -4,15 +4,20 @@ const UPDATE_NEW_DECK_CARD_NUMBER = 'UPDATE_NEW_DECK_CARD_NUMBER';
 
 const initialState = {
     deck: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    pulledCard: undefined,
+    pulledCard: null,
     newDeckCardNumber: ''
 }
 
 const cardReducer = (state = initialState, action) => {
     switch (action.type) {
         case GENERATE_DECK: {
+            const newDeck = [];
+            for (let i = 0; i <= state.newDeckCardNumber; i++) {
+                newDeck.push(i);
+            }
             return {
-                ...state
+                ...state,
+                deck: [...newDeck]
             };
         }
         case PULL_CARD: { //todo: make pull instead of this stub
