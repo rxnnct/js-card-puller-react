@@ -8,7 +8,8 @@ const Workspace = (props) => {
         <div className={style.workspace}>
             <ControlPanel newDeckCardNumber={props.newDeckCardNumber}
                           updateNewDeckCardNumber={props.updateNewDeckCardNumber}
-                          pullCard={props.pullCard}/>
+                          pullCard={props.pullCard}
+            generateDeck={props.generateDeck}/>
             <CardTable deck={props.deck} pulledCard={props.pulledCard}/>
         </div>
     );

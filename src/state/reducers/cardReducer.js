@@ -8,16 +8,17 @@ const initialState = {
     newDeckCardNumber: ''
 }
 
+//todo: extract business logic
 const cardReducer = (state = initialState, action) => {
     switch (action.type) {
         case GENERATE_DECK: {
             const newDeck = [];
-            for (let i = 0; i <= state.newDeckCardNumber; i++) {
+            for (let i = 1; i <= state.newDeckCardNumber; i++) {
                 newDeck.push(i);
             }
             return {
                 ...state,
-                deck: [...newDeck]
+                deck: newDeck
             };
         }
         case PULL_CARD: { //todo: make pull instead of this stub
@@ -39,7 +40,9 @@ const cardReducer = (state = initialState, action) => {
     }
 }
 
-export const generateDeckActionCreator = () => ({type: GENERATE_DECK});
+export const generateDeckActionCreator = () => ({
+    type: GENERATE_DECK
+})
 
 export const pullCardActionCreator = () => ({type: PULL_CARD});
 

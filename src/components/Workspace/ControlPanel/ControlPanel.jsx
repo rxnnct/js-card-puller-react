@@ -13,11 +13,15 @@ const ControlPanel = (props) => {
         props.pullCard();
     }
 
+    let onGenerateDeck = () => {
+        props.generateDeck();
+    }
+
     return (
         <div className={style.controlPanel}>
             <input className={style.cardsNumberInput} onChange={onNewDeckCardNumber} type="text" pattern="\d*"
                    value={newDeckCardNumber} placeholder="How many?"/>
-            <button className={style.generateButton}>Go!</button>
+            <button className={style.generateButton} onClick={onGenerateDeck}>Go!</button>
             <button className={style.pullButton} onClick={onPullCard}>Pull</button>
         </div>
     );
