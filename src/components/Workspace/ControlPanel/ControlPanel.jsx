@@ -19,7 +19,7 @@ const ControlPanel = (props) => {
 
     return (
         <div className={style.controlPanel}>
-            <input className={style.cardsNumberInput} onChange={onNewDeckCardNumber} type="text" pattern="\d*"
+            <input className={style.cardsNumberInput} onChange={onNewDeckCardNumber} type="number"
                    value={newDeckCardNumber} placeholder="How many?"/>
             <button className={style.generateButton} onClick={onGenerateDeck}>Go!</button>
             <button className={style.pullButton} onClick={onPullCard}>Pull</button>
