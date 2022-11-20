@@ -1,0 +1,67 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.controlPanel {
+  width: 240px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+        "i g"
+        "p p";
+  grid-template-columns: 150px;
+}
+
+.cardsNumberInput {
+  grid-area: i;
+  margin: 10px 0 10px 10px;
+  height: 60px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  text-align: center;
+  font-size: 20px;
+
+  &:focus {
+    border-color: black;
+  }
+}
+
+.generateButton {
+  grid-area: g;
+  margin: 10px;
+  height: 60px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  background-color: #1CA81C;
+  color: white;
+  font-size: 20px;
+
+  &:hover {
+    background-color: #000;
+    color: white;
+  }
+}
+
+.pullButton {
+  grid-area: p;
+  margin: 0 10px;
+  height: 60px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  background-color: #1CA81C;
+  color: white;
+  font-size: 20px;
+
+  &:hover {
+    background-color: #000;
+    color: white;
+  }
+}
