@@ -1,12 +1,28 @@
 import React from "react";
 import style from './ControlPanel.module.scss';
 
-const ControlPanel = () => {
+const ControlPanel = (props) => {
+    let newDeckCardNumber = props.newDeckCardNumber;
+
+    let onNewDeckCardNumber = (e) => {
+        let text = e.target.value;
+        props.updateNewDeckCardNumber(text);
+    }
+
+    let onPullCard = () => {
+        props.pullCard();
+    }
+
+    let onGenerateDeck = () => {
+        props.generateDeck();
+    }
+
     return (
         <div className={style.controlPanel}>
-            <input className={style.cardsNumberInput} type="text" value="" placeholder="How many?" />
-            <button className={style.generateButton}>Go!</button>
-            <button className={style.pullButton}>Pull</button>
+            <input className={style.cardsNumberInput} onChange={onNewDeckCardNumber} type="number"
+                   value={newDeckCardNumber} placeholder="How many?"/>
+            <button className={style.generateButton} onClick={onGenerateDeck}>Go!</button>
+            <button className={style.pullButton} onClick={onPullCard}>Pull</button>
         </div>
     );
 }

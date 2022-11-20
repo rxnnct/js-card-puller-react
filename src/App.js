@@ -1,12 +1,12 @@
 import './App.scss';
 import Header from "./components/Header/Header";
-import Workspace from "./components/Workspace/Workspace";
+import WorkspaceContainer from "./components/Workspace/WorkspaceContainer";
 
-function App() {
+const App = (props) => {
     return (
         <div className="app-wrapper">
-            <Header />
-            <Workspace />
+            <Header/>
+            <WorkspaceContainer/>
         </div>
     );
 }

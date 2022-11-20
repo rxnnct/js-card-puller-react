@@ -1,8 +1,7 @@
 .cardTable {
   margin: 10px;
-  border: black solid 1px; //todo: remove
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
