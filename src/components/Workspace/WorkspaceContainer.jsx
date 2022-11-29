@@ -1,8 +1,8 @@
 import {connect} from "react-redux";
 import {
-    generateDeckActionCreator,
-    pullCardActionCreator,
-    updateNewDeckCardNumberActionCreator
+    generateDeck,
+    pullCard,
+    updateNewDeckCardNumber
 } from "../../state/reducers/cardReducer";
 import Workspace from "./Workspace";
 
@@ -16,20 +16,8 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        updateNewDeckCardNumber: (num) => {
-            dispatch(updateNewDeckCardNumberActionCreator(num))
-        },
-        generateDeck: () => {
-            dispatch(generateDeckActionCreator())
-        },
-        pullCard: () => {
-            dispatch(pullCardActionCreator())
-        }
-    }
-}
+const dispatchMap = {updateNewDeckCardNumber, generateDeck, pullCard};
 
-const WorkspaceContainer = connect(mapStateToProps, mapDispatchToProps)(Workspace);
+const WorkspaceContainer = connect(mapStateToProps, dispatchMap)(Workspace);
 
 export default WorkspaceContainer;
