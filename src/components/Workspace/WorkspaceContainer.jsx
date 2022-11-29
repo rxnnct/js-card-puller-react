@@ -16,8 +16,8 @@ const mapStateToProps = (state) => {
     }
 }
 
-const dispatchMap = {updateNewDeckCardNumber, generateDeck, pullCard};
+const mapDispatchMap = {updateNewDeckCardNumber, generateDeck, pullCard};
 
-const WorkspaceContainer = connect(mapStateToProps, dispatchMap)(Workspace);
+const WorkspaceContainer = connect(mapStateToProps, mapDispatchMap)(Workspace);
 
 export default WorkspaceContainer;
