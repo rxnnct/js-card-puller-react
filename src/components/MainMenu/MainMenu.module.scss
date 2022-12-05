@@ -1,19 +1,31 @@
 .mainMenu {
-  margin-top: 25px;
+  margin: 10px 0 5px;
+  display: flex;
+  justify-content: center;
+}
 
-  a {
-    color: black;
-    font-size: 20px;
+a {
+  color: black;
+  font-size: 24px;
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
 
+li {
+  color: black;
+  font-size: 24px;
+  float:left;
+  margin-right:5px;
+  &::after {
+    padding-left: 5px;
+    content: "|";
+    color: #000;
+  }
+
+  &:last-child {
     &::after {
-      content: "|";
-      color: #000;
-    }
-
-    &:last-child {
-      &::after {
-        display: none;
-      }
+      display: none;
     }
   }
 }
