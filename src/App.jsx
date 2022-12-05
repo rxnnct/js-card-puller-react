@@ -11,7 +11,7 @@ const App = (props) => {
             <Header/>
             <MainMenu/>
             <Routes>
-                <Route path='/' element={<WorkspaceContainer/>}/>
+                <Route path='/*' element={<WorkspaceContainer/>}/>
                 <Route path='/help/' element={<HelpPage/>}/>
             </Routes>
         </div>
