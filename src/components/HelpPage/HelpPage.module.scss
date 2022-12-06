@@ -1,0 +1,17 @@
+.helpPage {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 24px;
+
+  ol {
+    list-style-position: inside;
+  }
+
+  .listHeader{
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
