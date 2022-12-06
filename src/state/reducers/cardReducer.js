@@ -42,13 +42,13 @@ const cardReducer = (state = initState, action) => {
     }
 }
 
-export const generateDeckActionCreator = () => ({
+export const generateDeck = () => ({
     type: GENERATE_DECK
 })
 
-export const pullCardActionCreator = () => ({type: PULL_CARD});
+export const pullCard = () => ({type: PULL_CARD});
 
-export const updateNewDeckCardNumberActionCreator = (num) => ({
+export const updateNewDeckCardNumber = (num) => ({
     type: UPDATE_NEW_DECK_CARD_NUMBER,
     cardsNumber: num
 })
