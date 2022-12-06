@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/js-card-puller-react/static/css/main.22cc27a0.css",
-    "main.js": "/js-card-puller-react/static/js/main.947554a2.js",
+    "main.css": "/js-card-puller-react/static/css/main.954c5912.css",
+    "main.js": "/js-card-puller-react/static/js/main.446ed79b.js",
     "static/js/787.3b4a4676.chunk.js": "/js-card-puller-react/static/js/787.3b4a4676.chunk.js",
     "index.html": "/js-card-puller-react/index.html",
-    "main.22cc27a0.css.map": "/js-card-puller-react/static/css/main.22cc27a0.css.map",
-    "main.947554a2.js.map": "/js-card-puller-react/static/js/main.947554a2.js.map",
+    "main.954c5912.css.map": "/js-card-puller-react/static/css/main.954c5912.css.map",
+    "main.446ed79b.js.map": "/js-card-puller-react/static/js/main.446ed79b.js.map",
     "787.3b4a4676.chunk.js.map": "/js-card-puller-react/static/js/787.3b4a4676.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22cc27a0.css",
-    "static/js/main.947554a2.js"
+    "static/css/main.954c5912.css",
+    "static/js/main.446ed79b.js"
   ]
 }
