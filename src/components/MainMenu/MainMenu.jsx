@@ -3,7 +3,6 @@ import style from './MainMenu.module.scss'
 import {NavLink} from "react-router-dom";
 
 const MainMenu = () => {
-    //todo: active page - black link; help text and styles
     return (
         <div className={style.mainMenu}>
             <ul>

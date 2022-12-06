@@ -2,30 +2,29 @@
   margin: 10px 0 5px;
   display: flex;
   justify-content: center;
-}
-
-a {
-  color: black;
-  font-size: 24px;
-  &:hover {
-    text-decoration-line: underline;
-  }
-}
-
-li {
-  color: black;
-  font-size: 24px;
-  float:left;
-  margin-right:5px;
-  &::after {
-    padding-left: 5px;
-    content: "|";
-    color: #000;
+  a {
+    color: black;
+    font-size: 24px;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 
-  &:last-child {
+  li {
+    color: black;
+    font-size: 24px;
+    float:left;
+    margin-right:5px;
     &::after {
-      display: none;
+      padding-left: 5px;
+      content: "|";
+      color: #000;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
     }
   }
 }
