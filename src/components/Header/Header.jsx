@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo.png';
 const Header = () => {
     return (
         <header className={style.header}>
-            <img className={style.logo} src={logo} />
+            <img className={style.logo} src={logo} alt="logo"/>
             <span className={style.appName}>JSCardPuller v.2</span>
         </header>
     );

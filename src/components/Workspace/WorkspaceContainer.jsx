@@ -6,7 +6,6 @@ import {
 } from "../../state/reducers/cardReducer";
 import Workspace from "./Workspace";
 
-//todo: maybe split it into two containers for CardTable & ControlPanel?
 const mapStateToProps = (state) => {
     return {
         deck: state.cards.deck,
