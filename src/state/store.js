@@ -5,7 +5,7 @@ const reducer = {
     cards: cardReducer
 }
 
-let store = configureStore({
+const store = configureStore({
     reducer
 })
 

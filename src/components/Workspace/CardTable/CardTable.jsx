@@ -7,7 +7,7 @@ const CardTable = () => {
 
     const {deck, pulledCard} = useContext(WorkSpaceContext);
 
-    let cardElements = deck.map(c => <Card key={c} isPulled={false} text={c}/>);
+    const cardElements = deck.map(c => <Card key={c} isPulled={false} text={c}/>);
 
     return (
         <div className={style.cardTable}>

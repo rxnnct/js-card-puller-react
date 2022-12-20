@@ -6,16 +6,16 @@ const ControlPanel = () => {
 
     const {newDeckCardNumber, updateNewDeckCardNumber, pullCard, generateDeck} = useContext(WorkSpaceContext);
 
-    let onNewDeckCardNumber = (e) => {
-        let text = e.target.value;
+    const onNewDeckCardNumber = (e) => {
+        const text = e.target.value;
         updateNewDeckCardNumber(text);
     }
 
-    let onPullCard = () => {
+    const onPullCard = () => {
         pullCard();
     }
 
-    let onGenerateDeck = () => {
+    const onGenerateDeck = () => {
         generateDeck();
     }
 
