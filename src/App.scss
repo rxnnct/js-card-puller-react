@@ -4,12 +4,27 @@
   min-height: 100vh;
 }
 
+header {
+  background-color: black;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.appName {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  margin: 18px 0 0 15px;
+}
+
 .content {
   flex: auto;
 }
 
 .footer-text {
-  color: black;
   font-size: 16px;
   display: inline-block;
   margin: 18px;
