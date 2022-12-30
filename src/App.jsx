@@ -1,6 +1,6 @@
 import './App.scss';
 import Header from "./components/Header/Header";
-import WorkspaceContainer from "./components/Workspace/WorkspaceContainer";
+import WorkspacePageContainer from "./components/WorkspacePage/WorkspacePageContainer";
 import MainMenu from "./components/MainMenu/MainMenu";
 import {Route, Routes} from 'react-router-dom';
 import HelpPage from "./components/HelpPage/HelpPage";
@@ -11,7 +11,7 @@ const App = (props) => {
             <Header/>
             <MainMenu/>
             <Routes>
-                <Route path='/*' element={<WorkspaceContainer/>}/>
+                <Route path='/*' element={<WorkspacePageContainer/>}/>
                 <Route path='/help/' element={<HelpPage/>}/>
             </Routes>
         </div>

@@ -1,11 +1,11 @@
 import React, {useContext} from "react";
 import style from './CardTable.module.scss';
 import Card from "./Card";
-import {WorkSpaceContext} from "../Workspace";
+import {WorkSpacePageContext} from "../WorkspacePage";
 
 const CardTable = () => {
 
-    const {deck, pulledCard} = useContext(WorkSpaceContext);
+    const {deck, pulledCard} = useContext(WorkSpacePageContext);
 
     const cardElements = deck.map(c => <Card key={c} isPulled={false} text={c}/>);
 

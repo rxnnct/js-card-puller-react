@@ -4,7 +4,7 @@ import {
     pullCard,
     updateNewDeckCardNumber
 } from "../../state/reducers/cardReducer";
-import Workspace from "./Workspace";
+import WorkspacePage from "./WorkspacePage";
 
 const mapStateToProps = (state) => {
     return {
@@ -17,6 +17,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {updateNewDeckCardNumber, generateDeck, pullCard};
 
-const WorkspaceContainer = connect(mapStateToProps, mapDispatchToProps)(Workspace);
+const WorkspacePageContainer = connect(mapStateToProps, mapDispatchToProps)(WorkspacePage);
 
-export default WorkspaceContainer;
+export default WorkspacePageContainer;

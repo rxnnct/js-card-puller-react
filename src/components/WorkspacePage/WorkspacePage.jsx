@@ -1,14 +1,14 @@
 import React, {createContext} from "react";
-import style from './Workspace.module.scss';
+import style from './WorkspacePage.module.scss';
 import ControlPanel from "./ControlPanel/ControlPanel";
 import CardTable from "./CardTable/CardTable";
 
-export const WorkSpaceContext = createContext(null);
+export const WorkSpacePageContext = createContext(null);
 
-const Workspace = (props) => {
+const WorkspacePage = (props) => {
     return (
-        <div className={style.workspace}>
-            <WorkSpaceContext.Provider value={
+        <div className={style.workspacePage}>
+            <WorkSpacePageContext.Provider value={
                 {
                     newDeckCardNumber: props.newDeckCardNumber,
                     updateNewDeckCardNumber: props.updateNewDeckCardNumber,
@@ -20,9 +20,9 @@ const Workspace = (props) => {
             }>
                 <ControlPanel/>
                 <CardTable/>
-            </WorkSpaceContext.Provider>
+            </WorkSpacePageContext.Provider>
         </div>
     );
 }
 
-export default Workspace;
+export default WorkspacePage;
