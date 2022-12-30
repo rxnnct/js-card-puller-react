@@ -1,14 +1,10 @@
-.app-wrapper {
+.app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-header {
-  background-color: black;
-}
-
-.logo {
+.appLogo {
   height: 60px;
   width: 60px;
 }
@@ -20,18 +16,23 @@ header {
   margin: 18px 0 0 15px;
 }
 
-.content {
+.appContent {
   flex: auto;
 }
 
-.footer-text {
+.header {
+  background-color: black;
+}
+
+.footer {
+  text-align: center;
+  background-color: #eee;
+  height: 60px;
+}
+
+.footerText {
   font-size: 16px;
   display: inline-block;
   margin: 18px;
 }
 
-footer {
-  text-align: center;
-  background-color: #eee;
-  height: 60px;
-}

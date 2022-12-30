@@ -8,13 +8,13 @@ import logo from "./assets/images/logo.png";
 
 const App = () => {
     return (
-        <div className="app-wrapper">
-            <header>
-                <img className="logo" src={logo} alt="logo"/>
+        <div className="app">
+            <header className="header">
+                <img className="appLogo" src={logo} alt="logo"/>
                 <span className="appName">JSCardPuller v.2</span>
             </header>
 
-            <div className="content">
+            <div className="appContent">
                 <MainMenu/>
                 <Routes>
                     <Route path='/*' element={<WorkspacePageContainer/>}/>
@@ -22,8 +22,8 @@ const App = () => {
                 </Routes>
             </div>
 
-            <footer>
-                <span className="footer-text">rxnnct 2022</span>
+            <footer className="footer">
+                <span className="footerText">rxnnct 2022</span>
             </footer>
         </div>
     );
