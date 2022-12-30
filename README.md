@@ -3,4 +3,9 @@
 Simple application for getting random number of integer sequence.
 
 ## Demo
-[Click me!](https://rxnnct.github.io/js-card-puller-react/)
+[js-card-puller-react](https://rxnnct.github.io/js-card-puller-react/)
+
+## Implementation details
+* JS, SCSS
+* React
+* Redux
