@@ -27,6 +27,9 @@ const cardReducer = (state = initState, action) => {
                 ...state,
                 deck: [...state.deck]
             };
+            if (stateCopy.deck.length === 0) {
+                return;
+            }
             const cardForPulling = Math.floor(Math.random() * (stateCopy.deck.length))
             stateCopy.pulledCard = stateCopy.deck.splice(cardForPulling, 1);
             return stateCopy;
