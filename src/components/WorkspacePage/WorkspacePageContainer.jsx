@@ -4,9 +4,8 @@ import {
     pullCard,
     updateNewDeckCardNumber
 } from "../../state/reducers/cardReducer";
-import Workspace from "./Workspace";
+import WorkspacePage from "./WorkspacePage";
 
-//todo: maybe split it into two containers for CardTable & ControlPanel?
 const mapStateToProps = (state) => {
     return {
         deck: state.cards.deck,
@@ -18,6 +17,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {updateNewDeckCardNumber, generateDeck, pullCard};
 
-const WorkspaceContainer = connect(mapStateToProps, mapDispatchToProps)(Workspace);
+const WorkspacePageContainer = connect(mapStateToProps, mapDispatchToProps)(WorkspacePage);
 
-export default WorkspaceContainer;
+export default WorkspacePageContainer;

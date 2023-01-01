@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appLogo {
+  height: 60px;
+  width: 60px;
+}
+
+.appName {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  margin: 18px 0 0 15px;
+}
+
+.appContent {
+  flex: auto;
+}
+
+.header {
+  background-color: black;
+}
+
+.footer {
+  text-align: center;
+  background-color: #eee;
+  height: 60px;
+}
+
+.footerText {
+  font-size: 16px;
+  display: inline-block;
+  margin: 18px;
+}
+

@@ -1,3 +1,5 @@
+import {getCardForPulling} from "../../utils/deckUtils";
+
 const GENERATE_DECK = 'GENERATE_DECK';
 const PULL_CARD = 'PULL_CARD';
 const UPDATE_NEW_DECK_CARD_NUMBER = 'UPDATE_NEW_DECK_CARD_NUMBER';
@@ -8,7 +10,6 @@ const initState = {
     newDeckCardNumber: ''
 }
 
-//todo: extract business logic to utils
 const cardReducer = (state = initState, action) => {
     switch (action.type) {
         case GENERATE_DECK: {
@@ -23,12 +24,14 @@ const cardReducer = (state = initState, action) => {
             };
         }
         case PULL_CARD: {
+            if (state.deck.length === 0) {
+                return state;
+            }
             const stateCopy = {
                 ...state,
                 deck: [...state.deck]
             };
-            let cardForPulling = Math.floor(Math.random() * (stateCopy.deck.length))
-            stateCopy.pulledCard = stateCopy.deck.splice(cardForPulling, 1);
+            stateCopy.pulledCard = stateCopy.deck.splice(getCardForPulling(stateCopy.deck.length), 1);
             return stateCopy;
         }
         case UPDATE_NEW_DECK_CARD_NUMBER: {

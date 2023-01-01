@@ -1,20 +1,22 @@
-import React from "react";
+import React, {useContext} from "react";
 import style from './ControlPanel.module.scss';
+import {WorkSpacePageContext} from "../WorkspacePage";
 
-const ControlPanel = (props) => {
-    let newDeckCardNumber = props.newDeckCardNumber;
+const ControlPanel = () => {
 
-    let onNewDeckCardNumber = (e) => {
-        let text = e.target.value;
-        props.updateNewDeckCardNumber(text);
+    const {newDeckCardNumber, updateNewDeckCardNumber, pullCard, generateDeck} = useContext(WorkSpacePageContext);
+
+    const onNewDeckCardNumber = (e) => {
+        const text = e.target.value;
+        updateNewDeckCardNumber(text);
     }
 
-    let onPullCard = () => {
-        props.pullCard();
+    const onPullCard = () => {
+        pullCard();
     }
 
-    let onGenerateDeck = () => {
-        props.generateDeck();
+    const onGenerateDeck = () => {
+        generateDeck();
     }
 
     return (
