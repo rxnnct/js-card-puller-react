@@ -10,7 +10,7 @@ const HelpPage = () => {
             <p className={style.listHeader}>How to use:</p>
             <ol>
                 <li>Choose the number of cards in the deck</li>
-                <li>Click "GO!"</li>
+                <li>Click "Go!"</li>
                 <li>Pull cards using the "Pull" button</li>
             </ol>
         </div>
